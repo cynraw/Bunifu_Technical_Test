@@ -2,13 +2,13 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body {
+main {
   max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 5rem;
 }
 
-ul {
+#pharmacy-list {
   list-style: none;
   padding: 0;
   display: grid;
@@ -63,6 +63,36 @@ input {
 h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+header {
+  background-color: #ff6b6b; /* Coral */
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+nav {
+  text-align: center;
+  padding: 1rem;
+  background-color: #70a1ff; /* Sky blue */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {
