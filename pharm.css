@@ -2,6 +2,12 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -57,4 +63,36 @@ input {
 h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #hero {
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  #hero p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+
+  #hero > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  button {
+    padding: 0.8rem 2.5rem;
+    font-size: 1.2rem;
+    width: fit-content;
+  }
 }
