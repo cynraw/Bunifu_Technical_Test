@@ -1,0 +1,44 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  /* width: 100vw; */
+  padding: 1rem;
+}
+
+#hero {
+  display: grid;
+  gap: 1rem;
+}
+
+#hero-img {
+  border-radius: 20px;
+  margin-top: 2rem;
+}
+
+#hero img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+button {
+  background-color: #142338;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #142338;
+  outline: none;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
