@@ -90,7 +90,7 @@ h1 {
     gap: 2rem;
   }
 
-  button {
+  #hero button {
     padding: 0.8rem 2.5rem;
     font-size: 1.2rem;
     width: fit-content;

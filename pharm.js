@@ -1,4 +1,5 @@
 const pharmacyListDiv = document.querySelector('#pharmacy-list');
+const searchInput = document.querySelector('#search');
 
 const pharmacyList = [
   {
@@ -39,6 +40,31 @@ const mappedPharms = pharmacyList.map((pharmacy) => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM fully loaded and parsed');
+  console.log('DOM fully loaded and parsed');
   pharmacyListDiv.append(...mappedPharms);
+});
+
+searchInput.addEventListener('input', (e) => {
+  const searchValue = e.target.value.toLowerCase();
+  const filteredPharms = pharmacyList.filter((pharmacy) => {
+    return (
+      pharmacy.name.toLowerCase().includes(searchValue) ||
+      pharmacy.town.toLowerCase().includes(searchValue) ||
+      pharmacy.address.toLowerCase().includes(searchValue)
+    );
+  });
+
+  const mappedFilteredPharms = filteredPharms.map((pharmacy) => {
+    const li = document.createElement('li');
+    li.style.backgroundColor = pharmacy.bgColor;
+    li.classList.add('pharmacy');
+    li.innerHTML = `
+        <h4>${pharmacy.name}</h4>
+        <p>${pharmacy.address}, ${pharmacy.town}</p>
+        `;
+    return li;
+  });
+
+  pharmacyListDiv.innerHTML = '';
+  pharmacyListDiv.append(...mappedFilteredPharms);
 });
