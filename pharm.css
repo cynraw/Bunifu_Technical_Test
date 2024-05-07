@@ -2,8 +2,24 @@
   font-family: 'Poppins', sans-serif;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.pharmacy {
+  padding: 0.2rem 1rem;
+  border-radius: 5px;
+}
+
+.pharmacy p {
+  font-style: italic;
+}
+
 section {
-  /* width: 100vw; */
   padding: 1rem;
 }
 
