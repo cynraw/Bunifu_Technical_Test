@@ -1,7 +1,19 @@
-const form = document.querySelector('form');
+// Function to toggle the display of profile elements
+function toggleProfile(profileId) {
+    var profile = document.getElementById(profileId);
+    if (profile.style.display === "none") {
+        profile.style.display = "block";
+    } else {
+        profile.style.display = "none";
+    }
+}
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    // Validate form fields and handle form submission
-    // You can connect this to your backend for consultation requests.
-});
+// Function to toggle the display of pharmacy location
+function toggleLocation() {
+    var pharmacyLocation = document.getElementById("pharmacyLocation");
+    if (pharmacyLocation.style.display === "none") {
+        pharmacyLocation.style.display = "block";
+    } else {
+        pharmacyLocation.style.display = "none";
+    }
+}

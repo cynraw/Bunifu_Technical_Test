@@ -10,47 +10,73 @@
     <header>
         <h1>Welcome to the Magical Health Adventure!</h1>
         <p>Your journey to understanding your body and health begins here!</p>
+        <!-- Search functionality -->
+        <input type="text" id="search" placeholder="Search...">
     </header>
 
-    <section class="features">
+    <nav>
+        <!-- Navigation links for easy access to different sections -->
+        <ul>
+            <li><a href="#guidance">Professional Guidance</a></li>
+            <li><a href="#pharmacy">Neighborhood Pharmacy</a></li>
+            <li><a href="#consultation">Consultation</a></li>
+            <li><a href="#discover">Discover</a></li>
+        </ul>
+    </nav>
+
+    <section class="features" id="guidance">
+        <!-- Mystical Guidance section -->
         <div class="feature">
-            <h2>Discover</h2>
-            <p>Explore the enchanted realm of sexual health through fun facts and stories!</p>
-        </div>
-        <div class="feature">
-            <h2>Mystical Guidance</h2>
-            <p>Connect with wise wizards who can help answer all your curious questions!</p>
+            <h2>Professional Guidance</h2>
+            <p>Connect with our leading consultation doctor who can help answer all your curious questions!</p>
+            <!-- Profile information -->
             <div class="profile">
-                <img src="picture1.jpg" width="75%" alt="Wise Wizard">
-                <h3>Dr.Jackline Maezda</h3>
+                <img src="picture1.jpg" width="35%" alt="Wise Wizard">
+                <h3>Dr. Jackline Maezda</h3>
                 <p>Specialization: Reproductive health wizard</p>
             </div>
         </div>
-        
+    </section>
+
+    <section class="features" id="pharmacy">
+        <!-- Enchanted Pharmacy section -->
         <div class="feature">
-            <h2>Consultation</h2>
-            <p>Seek advice from our magical healers for personalized guidance!</p>
-            <div class="profile">
-                <img src="picture2.jpg" width="75%" alt="Magical Healer">
-                <h3>Dr.Sean John</h3>
-                <p>Specialization: Reproductive health activist and Gynacologist at Kenyatta University Hospital</p>
-            </div>
-        </div>
-        <div class="feature">
-            <h2>Enchanted Pharmacy</h2>
+            <h2>Neighborhood Pharmacy</h2>
             <p>Discover a network of neighborhood pharmacies delivering magical health products!</p>
-            <div class="profile">
-                <img src="picture3.jpg" width="80%"  alt="Enchanted Pharmacy">
+            <button>Show Location</button>
+            <div id="pharmacyLocation" >
+                <img src="picture3.jpg" width="50%" alt="Enchanted Pharmacy">
                 <h3>Starlight Pharmacy</h3>
                 <p>Location: Moi Avenue, Nairobi CBD</p>
             </div>
         </div>
     </section>
 
+    <section class="features" id="discover">
+        <!-- Discover section -->
+        <div class="feature">
+            <h2>Discover</h2>
+            <p>Explore the enchanted realm of sexual health through fun facts and stories!</p>
+        </div>
+    </section>
+
+    <section class="features" id="consultation">
+        <!-- Consultation section -->
+        <div class="feature">
+            <h2>Consultation</h2>
+            <p>Seek advice from our professional healthcare providers for personalized guidance!</p>
+            <!-- Appointment booking form -->
+            <form action="backend/booking.php" method="post">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Your Email">
+                <input type="datetime-local" name="datetime" placeholder="Preferred Date & Time">
+                <button type="submit">Book Appointment</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2024 Magical Health Adventures</p>
     </footer>
-
-    <script src="app.js"></script>
 </body>
 </html>
