@@ -17,9 +17,9 @@
     <nav>
         <!-- Navigation links for easy access to different sections -->
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pharm.html">Pharmacy</a></li>
-            <li><a href="inventory.php">Inventory</a></li>
+            <li><a href="../">Home</a></li>
+            <li><a href="../pharmacy">Pharmacy</a></li>
+            <li><a href="./">Inventory</a></li>
         </ul>
     </nav>
 
@@ -59,7 +59,7 @@ if ($result->num_rows > 0) {
   }
   echo "</table>";
 } else {
-  echo "No items found";
+  echo "<p id='no-items'>No items found</p>";
 }
 
 $conn->close();
@@ -68,6 +68,7 @@ $conn->close();
 </table>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 <script>
   $(document).ready(function() {
     $("#add-item-form").submit(function(e) {
@@ -79,7 +80,7 @@ $conn->close();
 
       // Send AJAX request to add_item.php
       $.ajax({
-        url: "add_item.php",
+        url: "./add_item.php",
         method: "POST",
         data: { product_name: product_name, stock: stock },
         success: function(response) {

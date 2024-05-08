@@ -9,7 +9,7 @@ $sql = "DELETE FROM inventory WHERE id='$id'";
 
 if ($conn->query($sql) === TRUE) {
   echo "Record deleted successfully!";
-  header("Location: inventory.php"); // Redirect back to inventory after deletion
+  header("Location: ./"); // Redirect back to inventory after deletion
 } else {
   echo "Error deleting record: " . $conn->error;
 }

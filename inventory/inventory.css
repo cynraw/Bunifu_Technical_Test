@@ -81,6 +81,11 @@ h1 {
   background-color: #0056b3;
 }
 
+#no-items {
+  text-align: center;
+  margin: 20px;
+}
+
 @media screen and (min-width: 768px) {
   .add-item-form {
     width: 50%;
@@ -113,6 +118,7 @@ h1 {
 .inventory-table {
   border-collapse: collapse;
   width: 100%;
+  margin: 20px;
 }
 
 .inventory-table th,
@@ -132,37 +138,3 @@ h1 {
     margin: 20px auto;
   }
 }
-
-/* Path: inventory.php */
-
-
-/* <table class="inventory-table">
-  <tr>
-    <th>Product Name</th>
-    <th>Stock</th>
-    <th>Delete</th>
-  </tr>
-
-  <?php
-
-include('connect.php');
-
-// SQL query to fetch all data
-$sql = "SELECT id, product_name, stock FROM inventory";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    echo "<tr><td>" . $row["product_name"] . "</td><td>" . $row["stock"] . "</td>";
-    echo "<td><a href='delete_item.php?id=" . $row["id"] . "'>Delete</a></td></tr>";
-  }
-  echo "</table>";
-} else {
-  echo "No items found";
-}
-
-$conn->close();
-
-?>
-</table> */
