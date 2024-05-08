@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background-color: #ff6b6b; /* Coral */
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+nav {
+  text-align: center;
+  padding: 1rem;
+  background-color: #70a1ff; /* Sky blue */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.add-item-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #ff9f1c; /* Orange */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.add-item-form h2 {
+  margin-bottom: 1rem;
+}
+
+.add-item-form label {
+  font-weight: bold;
+}
+
+.add-item-form input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.add-item-form input[type='submit'] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.add-item-form input[type='submit']:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (min-width: 768px) {
+  .add-item-form {
+    width: 50%;
+    margin: 20px auto;
+  }
+
+  .add-item-form input {
+    width: 100%;
+  }
+
+  .add-item-form input[type='submit'] {
+    width: 100%;
+  }
+
+  .add-item-form input[type='datetime-local'] {
+    width: calc(100% - 42px);
+  }
+
+  .add-item-form h2 {
+    margin-top: 20px;
+  }
+
+  .add-item-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.inventory-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.inventory-table th,
+.inventory-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.inventory-table a {
+  color: red;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .inventory-table {
+    width: 50%;
+    margin: 20px auto;
+  }
+}
+
+/* Path: inventory.php */
+
+
+/* <table class="inventory-table">
+  <tr>
+    <th>Product Name</th>
+    <th>Stock</th>
+    <th>Delete</th>
+  </tr>
+
+  <?php
+
+include('connect.php');
+
+// SQL query to fetch all data
+$sql = "SELECT id, product_name, stock FROM inventory";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+  // output data of each row
+  while($row = $result->fetch_assoc()) {
+    echo "<tr><td>" . $row["product_name"] . "</td><td>" . $row["stock"] . "</td>";
+    echo "<td><a href='delete_item.php?id=" . $row["id"] . "'>Delete</a></td></tr>";
+  }
+  echo "</table>";
+} else {
+  echo "No items found";
+}
+
+$conn->close();
+
+?>
+</table> */
