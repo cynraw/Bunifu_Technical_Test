@@ -1,79 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Magical Health Adventure</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Welcome to the Magical Health Adventure!</h1>
-        <p>Your journey to understanding your body and health begins here!</p>
+      <h1>Welcome to the Magical Health Adventure!</h1>
+      <p>
+        Your journey to understanding your body and health begins
+        here!
+      </p>
     </header>
 
     <nav>
-        <!-- Navigation links for easy access to different sections -->
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pharm.html">Pharmacy</a></li>
-            <li><a href="inventory.php">Inventory</a></li>
-        </ul>
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="pharmacy">Pharmacy</a></li>
+        <li><a href="inventory">Inventory</a></li>
+      </ul>
     </nav>
 
     <section class="features" id="guidance">
-        <!-- Mystical Guidance section -->
-        <div class="feature">
-            <h2>Professional Guidance</h2>
-            <p>Connect with our leading consultation doctor who can help answer all your curious questions!</p>
-            <!-- Profile information -->
-            <div class="profile">
-                <img src="picture1.jpg" width="35%" alt="Wise Wizard">
-                <h3>Dr. Jackline Maezda</h3>
-                <p>Specialization: Reproductive health wizard</p>
-            </div>
+      <!-- Mystical Guidance section -->
+      <div class="feature">
+        <h2>Professional Guidance</h2>
+        <p>
+          Connect with our leading consultation doctor who can help
+          answer all your curious questions!
+        </p>
+
+        <!-- Profile information -->
+        <div class="profile">
+          <img
+            src="images/picture1.jpg"
+            width="35%"
+            alt="Wise Wizard"
+          />
+          <h3>Dr. Jackline Maezda</h3>
+          <p>Specialization: Reproductive health wizard</p>
         </div>
+      </div>
     </section>
 
     <section class="features" id="pharmacy">
-        <!-- Enchanted Pharmacy section -->
-        <div class="feature">
-            <h2>Neighborhood Pharmacy</h2>
-            <p>Discover a network of neighborhood pharmacies delivering magical health products!</p>
-            <button>Show Location</button>
-            <div id="pharmacyLocation" >
-                <img src="picture3.jpg" width="50%" alt="Enchanted Pharmacy">
-                <h3>Starlight Pharmacy</h3>
-                <p>Location: Moi Avenue, Nairobi CBD</p>
-            </div>
+      <!-- Enchanted Pharmacy section -->
+      <div class="feature">
+        <h2>Neighborhood Pharmacy</h2>
+        <p>
+          Discover a network of neighborhood pharmacies delivering
+          magical health products!
+        </p>
+        <button>Show Location</button>
+        <div id="pharmacyLocation">
+          <img
+            src="images/picture3.jpg"
+            width="50%"
+            alt="Enchanted Pharmacy"
+          />
+          <h3>Starlight Pharmacy</h3>
+          <p>Location: Moi Avenue, Nairobi CBD</p>
         </div>
+      </div>
     </section>
 
     <section class="features" id="discover">
-        <!-- Discover section -->
-        <div class="feature">
-            <h2>Discover</h2>
-            <p>Explore the enchanted realm of sexual health through fun facts and stories!</p>
-        </div>
+      <!-- Discover section -->
+      <div class="feature">
+        <h2>Discover</h2>
+        <p>
+          Explore the enchanted realm of sexual health through fun
+          facts and stories!
+        </p>
+      </div>
     </section>
 
     <section class="features" id="consultation">
-        <!-- Consultation section -->
-        <div class="feature">
-            <h2>Consultation</h2>
-            <p>Seek advice from our professional healthcare providers for personalized guidance!</p>
-            <!-- Appointment booking form -->
-            <form action="backend/booking.php" method="post">
-                <input type="text" name="name" placeholder="Your Name">
-                <input type="email" name="email" placeholder="Your Email">
-                <input type="datetime-local" name="datetime" placeholder="Preferred Date & Time">
-                <button type="submit">Book Appointment</button>
-            </form>
-        </div>
+      <!-- Consultation section -->
+      <div class="feature">
+        <h2>Consultation</h2>
+        <p>
+          Seek advice from our professional healthcare providers for
+          personalized guidance!
+        </p>
+        <!-- Appointment booking form -->
+        <form action="backend/booking.php" method="post">
+          <input type="text" name="name" placeholder="Your Name" />
+          <input type="email" name="email" placeholder="Your Email" />
+          <input
+            type="datetime-local"
+            name="datetime"
+            placeholder="Preferred Date & Time"
+          />
+          <button type="submit">Book Appointment</button>
+        </form>
+      </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Magical Health Adventures</p>
+      <p>&copy; 2024 Magical Health Adventures</p>
     </footer>
-</body>
+  </body>
 </html>
